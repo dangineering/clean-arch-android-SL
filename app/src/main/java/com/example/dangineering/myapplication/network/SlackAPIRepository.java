@@ -46,13 +46,6 @@ public class SlackAPIRepository {
 
         OkHttpClient okhttp = new OkHttpClient().newBuilder()
                 .addInterceptor(new LoggingInterceptor())
-//                .addInterceptor(new Interceptor() {
-//                    @Override
-//                    public Response intercept(Chain chain) throws IOException {
-//                        Request request = chain.request().newBuilder().addHeader("Api-Key", "api-key").build();
-//                        return chain.proceed(request);
-//                    }
-//                })
                 .build();
 
         //gson
